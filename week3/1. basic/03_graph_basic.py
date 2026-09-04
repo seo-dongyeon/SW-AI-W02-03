@@ -53,7 +53,6 @@ def create_graph(vertices, edges, directed=False):
             graph[i] = graph.get(i, []) + [j]
             graph[j] = graph.get(j, []) + [i]
             
-    #return {k: list(set(v)) for k, v in graph.items()}
     return graph
 
 # 테스트 케이스
